@@ -1,1 +1,1 @@
-sample file
+#include<stdio.h>

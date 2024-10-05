@@ -1,3 +1,11 @@
-marks=[10,20,30,40,50,60]
-marks1=marks[1:5]
-print(marks1)
+class car:
+    brand="Hyundai"
+    name="creata"
+
+    @staticmethod
+    def printinfo():
+        print("hello")
+        print("hello")
+
+c1=car()
+c1.printinfo()

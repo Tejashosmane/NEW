@@ -1,11 +1,20 @@
-class car:
-    brand="Hyundai"
-    name="creata"
+class Person:
+    __name="anonymous"
 
-    @staticmethod
-    def printinfo():
-        print("hello")
+    def __init__(self) -> None:
+        print("init")
+        self.clsmtd()
+
+    def __hello(self):
         print("hello")
 
-c1=car()
-c1.printinfo()
+    def clsmtd(self):
+        print(self.__name)
+        self.__hello()
+
+class man(Person):
+    def __init__(self) -> None:
+        super().__init__()
+        
+
+m1=man()

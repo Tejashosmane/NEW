@@ -1,14 +1,20 @@
 class Person{
-    public String name;
-    public int age;
+    String Name="tejas";
+    int age=20;
+    public void Printname(){
+        System.out.println(Name);
+    }
+}
+
+class Employee extends Person{
+    public void Printage(){
+        System.out.println(age);
+    }
 }
 
 public class solution{
     public static void main(String[] args) {
-        Person p1=new Person();
-        p1.name="tejas";
-        p1.age=20;
-        System.out.println(p1.name);
-        System.out.print(p1.age);
+        Person p1=new Employee();
+        p1.Printname();
     }
 }
